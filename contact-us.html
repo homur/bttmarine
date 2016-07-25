@@ -109,18 +109,20 @@
               <h2>CONTACT US</h2>
             </div>
           </div>
-          <div class="row contact-us-form">
-            <div class="col-xs-12 contact-us-explanation-col">
-            <p>Feel free to contact us. We are willing to help you with any issues you may encounter with our products</p>
+          <form action="mail.php" method="post">
+            <div class="row contact-us-form">
+              <div class="col-xs-12 contact-us-explanation-col">
+                <p>Feel free to contact us. We are willing to help you with any issues you may encounter with our products</p>
+              </div>
             </div>
             <div class="col-xs-12 col-md-6 form-item">
-              Name <br> <input type="name" placeholder="John Smith">
+              Name <br> <input type="text" name="ad" />
             </div>
             <div class="col-xs-12 col-md-6 form-item">
-              E-mail <br> <input type="email" placeholder="jonathan.smith@john.com">
+              E-mail <br> <input type="text" name="eposta" />
             </div>
             <div class="col-xs-12 col-md-6 form-item">
-              Subject <br> <input type="text">
+              Subject <br> <input type="text" name="konu" />
             </div>
             <div class="col-xs-12 col-md-6 form-item">
               <select name="" id="">
@@ -132,12 +134,19 @@
             </div>
             <div class="col-xs-12 col-md-12">
               Message <br>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="mesaj" id="" cols="30" rows="10"></textarea>
             </div>
             <div class="col-xs-12 contact-us-buttons-col">
               <a href="">Clear</a>
               <a href="">Send</a>
             </div>
+            <div class="col-xs-12">
+              <input type="submit" value="Mesajı Gönder" />
+            </div>
+          </form>
+          <div class="row contact-us-form">
+           
+            
           </div>
         </div>
         <div class="col-xs-12 col-md-3 contact-info-col">

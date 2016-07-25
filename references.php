@@ -53,6 +53,7 @@
     
     $yearCount = count($years);
 
+
     
 
 		$conn->close();
@@ -130,26 +131,32 @@
       </div>
     </header>
     <section id="references-content-area">
-    <div class="container">
+    <div class="container"> 
       <div class="panel-group" id="accordion">
         <?php 
+
           for ($i=0; $i < $yearCount ; $i++) { 
+          $yearName = $years[$i]['project_year'];
 
       echo('
       <div class="panel panel-default">
           <div class="accordion-header">
             <h2>
               <a data-toggle="collapse" data-parent="#accordion" href="#collapse');
-      echo ($years[$i]['project_year']);
+      echo($yearName);
+
       echo('">');
-      echo($years[$i]['project_year']);
+
+      echo($yearName);
+
       echo(
               '
                - PROJECTS<span class="accordion-close-button"><i class="fa fa-plus"></i></span></a>
             </h2>
           </div>
           <div id="collapse');
-      echo($years[$i]['project_year']);
+
+      echo($yearName);
 
       echo(
           '" class="panel-collapse collapse in">
