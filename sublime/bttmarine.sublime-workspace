@@ -1,0 +1,667 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"news",
+				"newsId"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"border-bott",
+				"border-bottom-right-radius"
+			],
+			[
+				"top-",
+				"border-top-right-radius"
+			],
+			[
+				"border-bot",
+				"border-bottom-left-radius"
+			],
+			[
+				"left",
+				"border-top-left-radius"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"b",
+				"bg	background"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"li",
+				"lightblue"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"inli",
+				"inline-table"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-table"
+			],
+			[
+				"im",
+				"imagePaths"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"kamp",
+				"kampanyaAdi"
+			],
+			[
+				"isle",
+				"isletmeTuru"
+			],
+			[
+				"kam",
+				"kampanyaAdi"
+			],
+			[
+				"islet",
+				"isletmeTuru"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"isl",
+				"isletmeturu"
+			],
+			[
+				"val",
+				"value	AngularJS"
+			],
+			[
+				"kurum",
+				"kurumsal_isletmeturu"
+			],
+			[
+				"kurums",
+				"kurumsal_telefon"
+			],
+			[
+				"kr",
+				"kurumsal_sirket"
+			],
+			[
+				"kru",
+				"kurumsal_adsoyad"
+			],
+			[
+				"is",
+				"isletmeTuru"
+			],
+			[
+				"va",
+				"var"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"ta",
+				"ta-c	text-align: center;"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"cur",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"d",
+				"div	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 165.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Sass",
+				"SassBeautify"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: Shell Script (Bash)"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 109.0,
+		"history":
+		[
+			"view.encoding()",
+			"Package Control: Install Package",
+			"package control: ",
+			"package control: install package",
+			"package control: install emmet",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Onur/Google Drive/bttmarine/web"
+	],
+	"file_history":
+	[
+		"/Users/Onur/Google Drive/bttmarine/web/sass/variables.scss",
+		"/Users/Onur/Google Drive/bttmarine/web/js/main.js",
+		"/Users/Onur/Google Drive/bttmarine/web/ekipmanlarimiz.html",
+		"/Users/Onur/Google Drive/bttmarine/web/sass/style.scss",
+		"/Users/Onur/Google Drive/bttmarine/web/hizmetlerimiz.html",
+		"/Users/Onur/Google Drive/bttmarine/web/kurumsal.html",
+		"/Users/Onur/Google Drive/bttmarine/web/css/style.css",
+		"/Users/Onur/Google Drive/bttmarine/web/img/sertifika-russian-maritime.png",
+		"/Users/Onur/Google Drive/bttmarine/web/index.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/js/kurumsal.js",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sass/turknet-satis.scss",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/Satis/assets/sass/turknet-satis.scss",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/css/turknet-satis.css",
+		"/Users/Onur/Downloads/CSS3FullscreenSlideshow/css/style1.css",
+		"/Users/Onur/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/Onur/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sss.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kampanya-detay.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/kurumsal.master",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/taahhutsuz-limitsiz-internet-paketi.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sozlesme_formlar.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sss_listele.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/taahhutsuz-limitsiz-engelsiz-internet-paketi.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/default_new.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/form_2_new.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/default_new_mainpage.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/turknet.master",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/form_3_new.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/js/turknet-satis.js",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/assets/bower_components/bootstrap/less/buttons.less",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/default_new.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/thankyou_new.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet-satis/thankyou.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet-satis/form2.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/thankyou_new.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/form_3_new.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/form_2_new.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet-satis/index.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet-satis/form3.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/form-2-new.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sass/variables/variables.scss",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/default.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/default_2.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet-satis/assets/css/turknet-satis.css",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/destek.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/css/site.css",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/sss_listele.aspx",
+		"/untitled",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/sss.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/sss.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/Web.config",
+		"/Users/Onur/Desktop/landing_tesekkur.asp",
+		"/WORKS/ZCT/oyun-programi-karlar-ulkesi.html",
+		"/WORKS/ZCT/oyun-programi-kibritci-kiz.html",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/online-islemler/default.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sinirsiz_internet.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/en_ucuz_internet.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sizi_arayalim_paketinizisecin.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sizi_arayalim_neden_turknet_v2_lgts.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/default.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/landing_files/css/landing-style.css",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/yalin_internet_sizi_arayalim.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/video_destek.aspx",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/css/accordion.css",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sizi_arayalım_fatura_derdine_son_3.asp",
+		"/WORKS/PASABAHCE/OMNIA/web/assets/sass/style.scss",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/sizi_arayalim_yeni_landing.asp",
+		"/WORKS/PASABAHCE/NUDE/web/checkout-finish.php",
+		"/Users/Onur/Desktop/deneme4.csv",
+		"/Users/Onur/Desktop/deneme",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/css/minify.css",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/SON/bline_turknet/turknet_kaynak/kurumsal/erisim.html",
+		"/WORKS/PASABAHCE/NUDE/web/assets/sass/nude.scss",
+		"/WORKS/PASABAHCE/NUDE/web/checkout-shipping.php",
+		"/Users/Onur/Desktop/sdasdasd.html",
+		"/Users/Onur/Desktop/sass deneme/assets/sass/site.scss",
+		"/Users/Onur/Desktop/sass deneme/assets/css/site.css",
+		"/Users/Onur/Desktop/sass deneme/.bowerrc",
+		"/Users/Onur/Desktop/sass deneme/bower.json",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/BACKUP_1/sizi_arayalim_paketinizisecin.asp",
+		"/WORKS/TURKNET/YENI WEB/BIREYSEL/TURKNET_SVN_/cengiz2.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/120x600.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/160x600.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/200x200.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/235x196.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/250x250.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/300x250.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/300x600.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/300x1050.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/320x100.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/336x280.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/468x60.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/728x90.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/970x90.html",
+		"/WORKS/TURKNET/BANNER/KURUMSAL/HTML5/970x250.html",
+		"/WORKS/TURKNET/WEBSITE/KURUMSAL/BACKUP/_header_landing_1_bline.asp",
+		"/WORKS/TURKNET/LANDINGPAGE/PAKETINIZI SECIN/sizi_arayalim_paketinizisecin_aff.asp",
+		"/WORKS/TURKNET/LANDINGPAGE/PAKETINIZI SECIN/sizi_arayalim_paketinizisecin.asp",
+		"/WORKS/TURKNET/LANDINGPAGE/PAKETINIZI SECIN/_header_landing_1.asp",
+		"/Users/Onur/Desktop/bline_backup/default.aspx",
+		"/Users/Onur/Desktop/bline_backup/site2.master",
+		"/Users/Onur/Desktop/bcom backup/site.master",
+		"/WORKS/TURKNET/KARSILASTIRMA/KARSİLASTİRMA/KARSİLASTİRMAnew/index.html",
+		"/Users/Onur/Desktop/vitra_bluelife_project/haberler.html",
+		"/Users/Onur/Desktop/vitra_bluelife_project/docs/haber_kupurleri/AB_Cevre_Odulu_2014/20141101_TERMODINAMIK.jpg",
+		"/Users/Onur/Desktop/bcom backup/musteri.aspx",
+		"/Users/Onur/Desktop/bcom backup/portfolioTv.aspx.cs",
+		"/Users/Onur/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"",
+			"turknet.master",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"col-xs-12",
+			"12",
+			"md-4",
+			"<img",
+			"h1",
+			" <h1>HAKKIMIZDA</h1>",
+			"col-md-3",
+			"10px",
+			"<img",
+			"xs-6",
+			"s-6",
+			"xs",
+			"sertifka",
+			"10px",
+			"arrow",
+			"=\"\"",
+			"src=\"",
+			"newsChange",
+			"newsNumber",
+			"b",
+			"span",
+			"col-xs",
+			"<div>",
+			"h2",
+			".4s",
+			"-bottom-width",
+			".4",
+			"border-color",
+			".2s",
+			"border",
+			"mobile",
+			"vdsl",
+			"ek",
+			"bulut",
+			"hizmet",
+			"avant",
+			"turknet.tr",
+			"/i>",
+			"<li>",
+			"</i>",
+			"a h",
+			"<ul>",
+			"a h",
+			"<ul>",
+			"a h",
+			"<ul>",
+			"a h",
+			"<ul>",
+			"a h",
+			"</a>",
+			"<ul>",
+			"a h",
+			"<ul>",
+			"a h",
+			"<ul>",
+			"ol",
+			"f",
+			"section",
+			"<ul>",
+			"ul",
+			"console",
+			"ð",
+			"Þ",
+			"&THORN;",
+			"&Scedil;",
+			"&acirc;",
+			"&ldquo;",
+			"&ccedil;",
+			"&ouml;",
+			"ý",
+			"þ",
+			"Ý",
+			"&uuml;",
+			"&Ouml;",
+			"Þ",
+			"ð",
+			"ý",
+			"þ",
+			"Ý",
+			"ý",
+			"Ý",
+			"ý",
+			"Ý",
+			"ý",
+			"Ý",
+			"3",
+			"abonesi",
+			"ozgur",
+			"</i>",
+			"<li>",
+			"step",
+			"evr",
+			"you",
+			".btn",
+			"gsm",
+			"koşull",
+			"kart numara",
+			"9 taks",
+			"TL /",
+			"taksit",
+			"20 tl",
+			"price",
+			"(27 TL x 9 TAKSİT)",
+			"tam ",
+			"tam ilet",
+			"tam ile",
+			"tam",
+			"tam-iletisim",
+			"class=\"fa fa-check sari",
+			"evrakımı",
+			"evrakımın",
+			"abonelik",
+			"evrak",
+			"evrakımın",
+			"<i class=\"fa fa-star sari\"></i> ",
+			"src=\"data/logo",
+			"path",
+			"src=\"data/logo.png",
+			"asp",
+			"body",
+			"awesome",
+			"src=\"data/logo.png\"",
+			"thank-you-finish",
+			"sözleşme",
+			"sözleşm",
+			"fatura",
+			"hızlı sınır",
+			"<a data-href=\"js-section-basvur-two\" href=\"javascript:void(0);\" class=\"btn btn-lg btn-success more-btn\">HEMEN BAŞVUR</a>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"https://dev.turk.net",
+			"",
+			"İ",
+			"ı",
+			"ş",
+			"ı",
+			"İ",
+			"<a href=\"docs/haber_kupurleri/",
+			"<a href=\"/docs/haber_kupurleri/\" class=\"detay_icin_tikla\" rel=\"external\">Dosyayı Aç</a>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.598443506521,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 98.0
+	},
+	"pinned_build_system": "",
+	"project": "bttmarine.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"kurumsal.mas",
+				"kurumsal/kurumsal.master"
+			],
+			[
+				"turknet.master",
+				"turknet.master"
+			],
+			[
+				"de",
+				"~/Desktop/bcom backup/musteri.aspx"
+			],
+			[
+				"as",
+				"~/Desktop/bcom backup/musteri.aspx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
