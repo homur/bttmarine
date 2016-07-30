@@ -19,30 +19,17 @@
     <script src="lib/jquery-2.1.4.js"></script> <!-- Jquery -->
     <title>BTT Marine</title>
   </head>
-	<?php
-		$servername = "localhost";
-		$username = "btt_db_user_1";
-		$password = "S8CU8R3dyAa28JGd";
-		$dbname = "bttmarine_db";
-
-		// Create connection
-		$conn = new mysqli($servername, $username, $password, $dbname);
-		$conn->set_charset("utf8");
-		
-		// Check connection
-		if ($conn->connect_error) {
-				die("Connection failed: " . $conn->connect_error);
-		} 
-			
+  <?php
+    include 'connect.php';
     $query = "SELECT id, project_year, project_title, project_images, project_details FROM db_projects";
-		$year_query = "SELECT DISTINCT project_year FROM db_projects";
-		
+    $year_query = "SELECT DISTINCT project_year FROM db_projects";
+  
     $totalResult = mysqli_query($conn,$query);
     $yearResult = mysqli_query($conn,$year_query);
-
+  
     $rows = array();
     $years = array();
-
+  
     while ($row = mysqli_fetch_assoc($totalResult)) {
         $rows[] = $row;
     }
@@ -52,13 +39,10 @@
     }
     
     $yearCount = count($years);
-
-
-    
-
-		$conn->close();
-	?>
-  <body>  
+  
+    $conn->close();
+  ?>
+  <body>
     <section class="mobile-menu">
       <div class="container-fluid">
         <div class="row mobile-menu-top-row">
@@ -111,8 +95,8 @@
                   <a href="#"><img class="buyutec" src="img/buyutec.png" alt="Arama"></a>
                 </div>
                 <div class="desktop-header-social-icons">
-                    <a target="_blank" href="https://www.facebook.com/BttMarine/"><img src="img/fb.png" alt=""></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/btt-marine"><img src="img/linkedin.png" alt=""></a>
+                  <a target="_blank" href="https://www.facebook.com/BttMarine/"><img src="img/fb.png" alt=""></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/btt-marine"><img src="img/linkedin.png" alt=""></a>
                   </ul>
                 </div>
               </div>
@@ -126,115 +110,82 @@
                 </ul>
               </div>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </header>
     <section id="references-content-area">
-    <div class="container"> 
-      <div class="panel-group" id="accordion">
-        <?php 
+      <div class="container">
+        <div class="panel-group" id="accordion">
+          <?php 
+            for ($i=0; $i < $yearCount ; $i++) { 
+            $yearName = $years[$i]['project_year'];
+            echo('
+            <div class="panel panel-default">
+            <div class="accordion-header">
+              <h2>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse');
+            echo($yearName);
+            
+            echo('">');
+            
+            echo($yearName);
+            
+            echo(
+                '
+                 - PROJECTS<span class="accordion-close-button"><i class="fa fa-plus"></i></span></a>
+              </h2>
+            </div>
+            <div id="collapse');
+            
+            echo($yearName);
+            echo ('"class="panel-collapse collapse'); 
+            if ($yearName === '2016') {
+              echo('in">');
+            }
+            else{
+              echo('">');
+            }
 
-          for ($i=0; $i < $yearCount ; $i++) { 
-          $yearName = $years[$i]['project_year'];
+            foreach ($rows as $key => $value) {
+              if($value['project_year'] === $yearName){
+                $project_year = $value['project_year'];
+                $image_paths = explode(',', $value['project_images']);
+                $imageCount = count($image_paths);
+                $project_title = $value['project_title'];
+                $project_details = $value['project_details'];
+                echo('
+                  <div class="accordion-container">
+                    <div class="reference-item">
+                      <div class="reference-item-header">
+                        <h3>' . $project_title . '
+                        </h3>
+                      </div>
+                      <div class="reference-item-body">
+                        <div class="row">');
+                          foreach ($image_paths as $image) { 
+                          echo('
+                          <div class="col-xs-12 col-md-3 reference-item-col">
+                            <img class="zoomImage img-responsive" src="'. $image .'" data-zoom-image=""/>
+                          </div>' );
+                        };
 
-      echo('
-      <div class="panel panel-default">
-          <div class="accordion-header">
-            <h2>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse');
-      echo($yearName);
-
-      echo('">');
-
-      echo($yearName);
-
-      echo(
-              '
-               - PROJECTS<span class="accordion-close-button"><i class="fa fa-plus"></i></span></a>
-            </h2>
-          </div>
-          <div id="collapse');
-
-      echo($yearName);
-
-      echo(
-          '" class="panel-collapse collapse in">
-            <div class="accordion-container">
-              <div class="reference-item">
-                <div class="reference-item-header">
-                  <h3>GÜLLÜK Yatch Marina - Cathodic Protection Installation </h3>
-                </div>
-                <div class="reference-item-body">
-                  <div class="row">
-                    <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
+                        echo('
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  </div>
-                </div>
+                ');
+              }
+            };
+            echo('
               </div>
             </div>
-            <div class="accordion-container">
-              <div class="reference-item">
-                <div class="reference-item-header">
-                  <h3>GÜLLÜK Yatch Marina - Cathodic Protection Installation </h3>
-                </div>
-                <div class="reference-item-body">
-                  <div class="row">
-                    <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-container">
-              <div class="reference-item">
-                <div class="reference-item-header">
-                  <h3>GÜLLÜK Yatch Marina - Cathodic Protection Installation </h3>
-                </div>
-                <div class="reference-item-body">
-                  <div class="row">
-                    <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  <div class="col-xs-12 col-md-3 reference-item-col">
-                    <img class="zoomImage img-responsive" src="img/references/big-dummy.jpg" data-zoom-image=""/>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>');
-    }
-        ?>
+              ');
+            }
+            ?>
+        </div>
       </div>
-    </div>
     </section>
     <footer>
       <div class="container">
@@ -251,7 +202,7 @@
           <div class="col-xs-12 col-md-4 footer-mailing-list">
             <div class="row">
               <div class="col-xs-12 mailing-list-title">
-              Subscribe To Our Newsletter
+                Subscribe To Our Newsletter
               </div>
               <div class="col-xs-12 mailing-list-input">
                 <input type="text" placeholder="enter your e-mail address here">

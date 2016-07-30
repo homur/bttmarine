@@ -40,7 +40,10 @@ $(function(){
 		}
 		
 	})
-	
+//	
+	$('#add-more-image').on('click', function(){
+		$('<input name="file[]" type="file" id="file">').appendTo('#image-add-area');
+	});
 });
 
 
