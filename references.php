@@ -21,14 +21,18 @@
   </head>
   <?php
     include 'connect.php';
-    $query = "SELECT id, project_year, project_title, project_images, project_details FROM db_projects";
+    $query = "SELECT id, project_year, project_title, project_details FROM db_projects";
     $year_query = "SELECT DISTINCT project_year FROM db_projects";
-  
+    $image_query = "SELECT project_id, image_path FROM db_project_images";
+
+
     $totalResult = mysqli_query($conn,$query);
     $yearResult = mysqli_query($conn,$year_query);
-  
+    $imageResult = mysqli_query($conn, $image_query);
+
     $rows = array();
     $years = array();
+    $imagePaths = array();
   
     while ($row = mysqli_fetch_assoc($totalResult)) {
         $rows[] = $row;
@@ -37,9 +41,12 @@
     while ($year = mysqli_fetch_assoc($yearResult)) {
         $years[] = $year;
     }
+
+    while ($imagePath = mysqli_fetch_assoc($imageResult)) {
+        $imagePaths[] = $imagePath;
+    }
     
     $yearCount = count($years);
-  
     $conn->close();
   ?>
   <body>
@@ -59,7 +66,7 @@
           <ul>
             <li><a href="about-us.html">ABOUT US</a></li>
             <li><a href="services.html">SERVICES</a></li>
-            <li><a href="references.html">REFERENCES</a></li>
+            <li><a href="references.php">REFERENCES</a></li>
             <li><a href="equipments.html">EQUIPMENTS</a></li>
             <li><a href="contact-us.html">CONTACT</a></li>
           </ul>
@@ -104,7 +111,7 @@
                 <ul>
                   <li><a href="about-us.html">ABOUT US</a></li>
                   <li><a href="services.html">SERVICES</a></li>
-                  <li><a href="references.html">REFERENCES</a></li>
+                  <li><a href="references.php">REFERENCES</a></li>
                   <li><a href="equipments.html">EQUIPMENTS</a></li>
                   <li><a href="contact-us.html">CONTACT</a></li>
                 </ul>
@@ -150,8 +157,8 @@
             foreach ($rows as $key => $value) {
               if($value['project_year'] === $yearName){
                 $project_year = $value['project_year'];
-                $image_paths = explode(',', $value['project_images']);
-                $imageCount = count($image_paths);
+                //$image_paths = $imagePaths['project_images'];
+                
                 $project_title = $value['project_title'];
                 $project_details = $value['project_details'];
                 echo('
@@ -163,13 +170,14 @@
                       </div>
                       <div class="reference-item-body">
                         <div class="row">');
-                          foreach ($image_paths as $image) { 
-                          echo('
-                          <div class="col-xs-12 col-md-3 reference-item-col">
-                            <img class="zoomImage img-responsive" src="'. $image .'" data-zoom-image=""/>
-                          </div>' );
-                        };
-
+                          foreach ($imagePaths as $imageitem) {
+                            if($imageitem['project_id'] == $value['id']){
+                            echo('
+                            <div class="col-xs-12 col-md-3 reference-item-col">
+                              <img class="zoomImage img-responsive" src="img/references/uploads/'. $imageitem['image_path'] .'" data-zoom-image=""/>
+                            </div>' );
+                            }
+                          }
                         echo('
                         </div>
                       </div>
